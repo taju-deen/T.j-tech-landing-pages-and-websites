@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+.menu div .fa-solid{
+    color: black;
+}
+.menu div .fa-regular{
+    color: blue;
+}
+
+
+body{
+    
+    font-family: "Roboto", sans-serif;
+   
+    background-color: beige;
+    
+
+}
+#dashboard{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(251, 249, 249);
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+.left{
+    height: 100%;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: rgb(231, 224, 217);
+ 
+
+}
+.real{
+    height: 100%;
+    width: 45%;
+    
+    gap: 2rem;
+    background-color: rgb(252, 251, 250);
+}
+.left .logo{
+    display: flex;
+    
+gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+     
+}
+.left .logo .fa-solid{
+    display: none;
+}
+.logo img{
+    height: 20px;
+    width: 20px;
+    align-self: center;
+}
+.logo h1{
+  font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+
+}
+.logo h1 span{
+    color: brown;
+}
+
+.aside-menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    
+    
+}
+.anchor{
+    display: flex;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    gap: 0.5rem;
+    transition: all ease 0.3s;
+    
+
+}
+.anchor p{
+    transition: all ease 0.3;
+    font-size: 0.9rem;
+}
+.anchor:hover p{
+    color: purple;
+}
+ .logout{
+    margin-top: 6rem;
+}
+.anchor span{
+    background-color: brown;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
+.anchor::before{
+    display:none;
+    content: "";
+    position: absolute;
+left: 0rem;
+bottom: 0pX;
+    height: 100%;
+    width: 7px;
+    background-color: blue;
+    
+}
+.anchor:hover::before{
+    display: block;
+}
+.anchor:hover{
+    background-color: rgb(208, 174, 216);
+    margin-left: 1rem;
+}
+.middle-section{
+    width: 70%;
+    height: 100%;
+    padding-top: 1.5rem;
+    background-color: blanchedalmond;
+    padding: 0px 1rem;
+    
+}
+.middle-section h1{
+    font-family: sans-serif;
+}
+.middle-section input{
+    background-color: aliceblue;
+    padding: 0.2rem 1rem;
+    margin: 1rem 0rem;
+}
+.progress-bars{
+    display: flex;
+    gap: 1rem;
+    
+    
+    
+}
+.progress{
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.1),-0.1rem -0.1rem 0.1rem rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    
+}
+.progress:hover{
+    box-shadow: none;
+    border: 2px solid black;
+}
+.progress-bars .side{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.progress .side .fa-solid{
+
+    background-color: blue;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    border-radius: 50px;
+   border: 2px solid white;
+   color: white;
+   border-left: 4px solid blue ;
+   border-right: 4px solid blue;
+   
+}
+
+.progress-bars .side p{
+margin-top: 1rem;
+color: rgb(86, 103, 117);
+}
+.recent-orders{
+    margin: 1rem;
+    
+}
+.recent-orders h2{
+    margin-bottom: 1rem;
+}
+.all-orders{
+    display: flex;
+    gap: 3rem;
+    margin: 2rem;
+}
+.recent-orders table{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0,0.1 ),-0.2rem -0.2rem 0.2rem rgba(0, 0, 0,0.1 );
+    border: 2px solid white;
+    transition: all ease 0.3s;
+}
+.recent-orders table:hover{
+    box-shadow: none;
+}
+.recent-orders table tbody td{
+
+    height: 1.5rem;
+    border-bottom: 1px solid rgb(219, 211, 211);
+    font-size: 0.8rem;
+}
+.recent-orders table tbody tr:last-child td{
+    border: none;
+}
+.recent-orders table thead{
+   color: black;
+   font-weight: bolder;
+
+}
+.recent-orders p{
+    text-align: center;
+    margin-top: 1rem;
+}
+.right-section{
+    
+    position: relative;
+    margin: 1rem;
+    width: 37%;
+    
+}
+.top-container{
+    
+right: 2rem;
+
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+}
+.top-container img{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50px;
+    border: 2px solid rgb(238, 169, 169);
+}
+.second-top{
+    margin-top: 3.0rem;
+    font-size: 0.8rem;
+}
+.toggle{
+    display: flex;
+    gap: 0.2rem;
+    
+
+}
+.individual-toggle .fa-regular{
+    font-size: 0.8rem;
+    
+    
+    color: white;
+    border-radius: 5px;
+    bottom: 0.2rem;
+    right: 0.05rem;
+    position: absolute;
+}
+.individual-toggle{
+    position: relative;
+    background-color: blue;
+    padding: 0.6rem;
+    border-radius: 5px;
+    height: 1rem;
+    width: 1rem;
+    
+}
+.profile{
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.profile .name p:last-child{
+    align-self: flex-end;
+}
+.profile .name span{
+    font-weight: bolder;
+}
+
+.second-top img{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50px;
+    border: 2px solid rgb(238, 169, 169);
+}
+.sub-second{
+    width: 100%;
+    padding: 1.5rem;
+    box-shadow:  0.1rem 0.1rem 0.1rem rgba(0,0,0,0.1),-0.1rem -0.1rem 0.1rem rgba(0,0,0,0.1);
+border: 1px solid white;
+border-radius: 10px;
+margin-top: 0.5rem;
+background-color: white;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+
+}
+.sub-second:hover{
+    box-shadow: none;
+    border: 3px solid white;
+}
+.sub-second .mini-second{
+display: flex;
+gap: 2rem;
+}
+.sub-second .mini-second div span:first-child{
+    font-weight: bolder;
+}
+.sub-second .mini-second div .number{
+    margin-top: 0.5rem;
+    color: rgb(213, 10, 37);
+}
+.sales-Analystics{
+margin: 2rem 0rem;
+font-size: 0.8rem;
+width: 100%;
+}
+.sub-Analytics{
+    height: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+   width: 100%;
+   background-color: white;
+    box-shadow:   0.1rem 0.1rem 0.1rem rgba(0,0,0,0.1),-0.1rem -0.1rem 0.1rem rgba(0,0,0,0.1);
+}
+.sub-Analytics .fa-regular{
+    border-radius: 100%;
+    background-color: blue;
+    color: white;
+    height: 1.4rem;
+    width: 1.4rem;
+    
+    align-content: center;
+    
+}
+.sub-Analytics div  {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 0.5rem;
+    gap: 0.2rem;
+
+}
+.sub-Analytics div p{
+    color: green;
+    
+}
+.sub-Analytics h3:nth-child(3){
+color: rgb(128, 0, 30);
+}
+.Add{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: 2px dashed purple;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    box-shadow: 0.2rem 0.2rem 0.2rem inset,-0.2rem -0.2rem -0.2rem rgba(0, 0, 0,0.1 );
+    filter: blur(5);
+    font-size: 1rem;
+    background-color: rgb(194, 194, 235);
+
+
+}
+
+
+@media screen and (max-width:1200px){
+    
+    .left .logo h1{
+        display: none;
+    }
+    .left .aside-menu .anchor p{
+        display: none;
+    }
+    .left .aside-menu a i{
+        font-size: 1.2rem;
+    }
+    .left{
+        width: 10%;
+    }
+    .left .logo img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .logo{
+        text-align: center;
+        margin-right: 1rem;
+    }
+    .middle-section .progress-bars{
+        flex-direction: column;
+       
+    
+    }
+    .middle-section .progress-bars .progress{
+         width: 98%;
+
+    }
+    .middle-section{
+        width: 55%;
+
+    }
+    .recent-orders{
+        width: 80vw;
+    }
+    .sub-Analytics{
+        padding: 2rem ;
+        gap: 1rem;
+    }
+    
+}
+@media screen and (max-width:768px){
+
+    .left .logo h1{
+        display: inline-block;
+    }
+    .left .aside-menu .anchor p{
+        display: inline-block;
+    }
+    .left{
+       width: 40%;
+        z-index: 9999;
+        transform: translateX(-500px);
+        position:absolute ;
+        top: 0;
+        left: 0;
+        transition: all ease 0.3s;
+
+    }
+    .left .logo .fa-solid{
+        display: inline-block;
+        
+        font-size: 1.5rem;
+    
+        
+    }
+    #dashboard{
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+    }
+    .left .logo h1{
+        font-size: 1rem;
+        
+    }
+    .left .logo{
+        display: flex;
+        justify-content:  space-around;
+    }
+    
+   .top-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0,0.1 );
+
+   }
+   .middle-section{
+    margin: 3rem 0rem;
+    width: 100%;
+    padding: 0px 2rem;
+    background-color: whitesmoke;
+    
+    
+   }
+   .right-section{
+    width: 100%;
+    padding: 0 2rem;
+    
+   }
+   .middle-section .progress-bars .progress{
+    width: 100%;
+   }
+   .middle-section .recent-orders table{
+    width: 100%;
+    padding-left: 0rem;
+    
+    
+
+   }
+   .middle-section .recent-orders table thead{
+    font-size: 0.7rem;
+    
+   }
+   .middle-section .recent-orders table tbody >tr{
+    font-size: 1rem;
+    color: green;
+   }
+   .middle-section .recent-orders{
+    width: 100%;
+    margin: 0rem;
+    
+   }
+   .right-section{
+    width: 100%;
+    padding-left: 0rem;
+    overflow: hidden;
+
+   }
+   .showleft{
+    transform: translateX(0px);
+   }
+
+  
+
+   
+}
+@media screen and (max-width:387px) {
+   .left{
+width: 60%;
+   } 
+    
+}
