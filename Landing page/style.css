@@ -67,6 +67,9 @@ nav{
     transition: all ease 0.5s;
  
 }
+nav .fa-list{
+    display: none;
+}
  nav h1{
         display: none;
         font-size: 2rem;
@@ -598,6 +601,9 @@ footer>p{
     }
     .hero p{
         width:100%;
+    }
+    nav .fa-list{
+        display: block;
     }
   
     ul{
