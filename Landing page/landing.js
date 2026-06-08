@@ -1,4 +1,4 @@
-const menuColumn=document.querySelector(".menu-column");
+const menuColumn=document.querySelector(".fa-list");
 const Navigation=document.querySelector("ul");
 const individual=document.querySelectorAll("a")
 const nav=document.querySelector("nav")
@@ -8,7 +8,7 @@ const sections=document.querySelectorAll("section")
 
 
 menuColumn.addEventListener("click",()=>{
-    Navigation.classList.toggle("Total-display")
+    Navigation.classList.toggle("show")
     
 
 });
@@ -17,7 +17,7 @@ menuColumn.addEventListener("click",()=>{
 
 individual.forEach((single)=>{
     single.addEventListener("click",()=>{
-        Navigation.classList.remove("Total-display");
+        Navigation.classList.remove("show");
     
      individual.forEach((div)=>{
         div.classList.remove("liclick")
@@ -31,11 +31,14 @@ individual.forEach((single)=>{
     
 })
 window.addEventListener("scroll",()=>{
+
+    Navigation.classList.remove("show");
     
     if (window.scrollY>30){
   nav.style.width="100%"
   nav.style.top="0"
   nav.style.borderRadius=0
+
   
 
 

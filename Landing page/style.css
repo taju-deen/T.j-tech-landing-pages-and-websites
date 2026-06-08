@@ -601,7 +601,7 @@ footer>p{
     }
   
     ul{
-        display: none;
+        display:none;
         flex-direction: column;
         position: absolute;
         width:98%;
@@ -613,6 +613,9 @@ footer>p{
       margin-top: 16px;
     
      
+    }
+    .show{
+        display:flex;
     }
     #review h1{
         text-align: center;
