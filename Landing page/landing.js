@@ -43,6 +43,7 @@ window.addEventListener("scroll",()=>{
     else{
         nav.style.top="1.5rem"
         nav.style.width="90%"
+        nav.style.borderRadius="20px"
     }
 
 

@@ -104,12 +104,14 @@ ul{
  align-items: center;
  flex-direction: column;
  text-align: center;
- width: 60vw;
+ width: 100%;
  gap: 1rem;
  font-size: 1.0rem;
+ padding: 0rem 2rem;
 
- 
 }
+.hero p{
+width:70%;}
 
 .hero button{
     padding: 10px 20px;
@@ -126,8 +128,10 @@ ul{
    align-items: center;
  gap: 2rem;
    
-    margin-top: 3rem;
+    margin: 3rem 2rem 0rem 2rem;
       flex-wrap: wrap;
+
+      overflow-x: hidden;
       
      
     
@@ -136,7 +140,7 @@ ul{
     content: "";
     background-color: white;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height:15rem;
     border-top-left-radius: 60%;
     border-top-right-radius: 60%;
@@ -589,7 +593,11 @@ footer>p{
     .all{
       
         width: 100vw;
+        overflow-x: hidden;
         
+    }
+    .hero p{
+        width:100%;
     }
   
     ul{
@@ -674,4 +682,10 @@ padding: 1em;
     background-color:rgba(234, 180, 189, 0.888);
    }
     
+}
+@media(max-width:1160px) {
+    #home::before{
+        display:none;
+    }
+
 }
