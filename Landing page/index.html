@@ -6,6 +6,7 @@
     <title>Teachers page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     
     
@@ -32,16 +33,20 @@
             </nav>
             <div class="hero">
 
-                
+            <div class="card" data-aos="fade-right">
                 <h1>LEARNING ONLINE FROM HOME</h1>
+            </div>
                 <P>Lorem ipsum, dolor sit amet 
                     consectetur adipisicing elit. Rem consequuntur 
                     odio, at aspernatur earum nam doloribus suscipit, illum iure, eaque aliquid ea facere dignissimos quod atque 
                     sit obcaecati accusantium voluptatum.</P>
                     <button type="button">Discover More</button>
+                
 
              </div>
-            <div class="all-content">
+             
+             <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="all-content" >
                 <div class="content first">
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Trending Courses</h3>
@@ -63,6 +68,7 @@
                     </div>
 
             </div>
+            </div>
    
 
 
@@ -70,11 +76,16 @@
 
     <section id="about">
         <div class="first-heading">
-            <h1>About</h1>
+            <div class="card" data-aos="fade-right">
+              <h1>About</h1>
+            </div>
           <p>Start your journey With us</p>
         </div>
          <div class="second">
             <div class="journey">
+        <div data-aos="zoom-in">
+        
+     
                 <h1>Start Your journey To A Better Life With Our Practical Courses </h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                      Dolores molestias, autem quo illo delectus hic? Dolorum laborum, 
@@ -82,10 +93,13 @@
                      optio dignissimos ad molestiae odio dolores aspernatur atque?
                     </p>
                     <button>Learn More</button>
+             </div>
 
             </div>
+             <div data-aos="zoom-in">
             <div class="img">
-            <img src="./Assets folder/images (12).jpeg" alt="typing images">
+               <img src="./Assets folder/images (12).jpeg" alt="typing images">
+            </div>
             </div>
 
            
@@ -100,8 +114,9 @@
         <h1>Our Teachers</h1>
         <p>Meet our professional trainers</p>
         </div>
-
-       <div class="all-teacher">
+    
+      <div data-aos="zoom-in">
+        <div class="all-teacher">
 
        
         <div class="Our-teacher">
@@ -154,7 +169,8 @@
 
         </div>
         </div>
-        
+
+    </div>    
         
     </section>
     <section id="Our-courses">
@@ -300,7 +316,14 @@
             
 
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script>
+  AOS.init({
+    duration: 1000,
+    once: false
+  });
+</script>
         
 
     <script src="landing.js"></script>
